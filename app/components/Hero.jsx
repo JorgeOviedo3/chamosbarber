@@ -1,10 +1,16 @@
+import Image from "next/image";
+import { IoLocation } from "react-icons/io5";
+
 export const Hero = () => {
   return (
-    <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
+    <section className="overflow-hidden flex flex-col-reverse sm:grid sm:grid-cols-2 sm:items-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-        <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        <div className="lg:ml-auto max-w-xl  xl:pl-8 text-left ltr:sm:text-left rtl:sm:text-right">
+          <h2 className="font-bold text-center md:text-left">
+            <span className="text-4xl lg:text-5xl xl:text-6xl">Chamos Barber </span> <br></br>
+            <span className="text-sm lg:text-[21px]">
+              The hottest barber shop, Walk-Ins welcome.
+            </span>
           </h2>
 
           <p className="hidden text-gray-500 md:mt-4 md:block">
@@ -13,21 +19,24 @@ export const Hero = () => {
             volutpat quisque ut interdum tincidunt duis.
           </p>
 
-          <div className="mt-4 md:mt-8">
+          <div className="mt-4  md:mt-8">
             <a
               href="#"
-              className="inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-black/80 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="w-fit font-bold rounded bg-black px-12 py-3 text-sm text-white transition  hover:bg-black/90 duration-300 focus:outline-none focus:ring focus:ring-yellow-400 uppercase flex mx-auto md:mx-0 items-center gap-2"
             >
-              Get Started Today
+              <IoLocation />
+              Our Locations
             </a>
           </div>
         </div>
       </div>
 
-      <img
-        alt="Violin"
+      <Image
+        alt="Chamos Barber Hero Image"
         src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-        className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+        width={1470}
+        height={980}
+        className="h-full w-full object-cover sm:self-end sm:rounded-ss-[30px] md:rounded-ss-[60px] "
       />
     </section>
   );
