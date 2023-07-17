@@ -1,8 +1,8 @@
 import { TbMoodKid } from "react-icons/tb";
 import { GiMustache, GiHeartBottle } from "react-icons/gi";
-import { ImScissors } from "react-icons/im"; 
-import { BiSolidFace } from "react-icons/bi"
-import { SlMustache } from "react-icons/sl"
+import { ImScissors } from "react-icons/im";
+import { BiSolidFace } from "react-icons/bi";
+import { SlMustache } from "react-icons/sl";
 import Link from "next/link";
 
 export const Services = () => {
@@ -14,7 +14,10 @@ export const Services = () => {
             <h2 className="font-bold h2 text-gray-100">Our premier services for the modern man</h2>
 
             <p className="mt-4 text-gray-300">
-              At Chamos Barber Shop, we offer a range of premier services tailored to meet the grooming needs of the modern man. Our skilled barbers are experts in precision haircuts, classic shaves, beard trims, and stylish men's grooming. Step into our shop and indulge in an unforgettable grooming experience designed exclusively for you.
+              At Chamos Barber Shop, we offer a range of premier services tailored to meet the
+              grooming needs of the modern man. Our skilled barbers are experts in precision
+              haircuts, classic shaves, beard trims, and stylish men&apos;s grooming. Step into our
+              shop and indulge in an unforgettable grooming experience designed exclusively for you.
             </p>
 
             <Link
@@ -61,7 +64,7 @@ export const Services = () => {
               href="/services"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <GiMustache className="w-6 h-6"/>
+                <GiMustache className="w-6 h-6" />
               </span>
 
               <h2 className="mt-2 font-bold text-gray-100">Senior Haircut</h2>
@@ -76,13 +79,13 @@ export const Services = () => {
               href="/services"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <SlMustache className="w-6 h-6"/> 
+                <SlMustache className="w-6 h-6" />
               </span>
 
               <h2 className="mt-2 font-bold text-gray-100">Mustache</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
-                Precision grooming for your 'stache.
+                Precision grooming for your &apos;stache.
               </p>
             </Link>
 
@@ -91,7 +94,7 @@ export const Services = () => {
               href="/services"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <ImScissors className="w-6 h-6"/>
+                <ImScissors className="w-6 h-6" />
               </span>
 
               <h2 className="mt-2 font-bold text-gray-100">Scissor Haircut</h2>
@@ -106,7 +109,7 @@ export const Services = () => {
               href="/services"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <GiHeartBottle className="w-6 h-6"/>
+                <GiHeartBottle className="w-6 h-6" />
               </span>
 
               <h2 className="mt-2 font-bold text-gray-100">Skin Fade</h2>

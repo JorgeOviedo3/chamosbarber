@@ -9,15 +9,15 @@ export const Hero = () => {
           <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">
             Welcome to Chamos Barber Shop <br />{" "}
             <span className="font-thin text-gray-700 text-xl md:text-2xl">
-              Elevating Men's Grooming
+              Elevating Men&apos;s Grooming
             </span>
           </h1>
 
           <p className="text-gray-500 mt-4">
-            Experience the ultimate in men's grooming at Chamos Barber Shop. Our team of skilled
-            barbers is dedicated to delivering exceptional haircuts, grooming, and styling services
-            tailored specifically to you. Step into our world of timeless style and masculine
-            elegance
+            Experience the ultimate in men&apos;s grooming at Chamos Barber Shop. Our team of
+            skilled barbers is dedicated to delivering exceptional haircuts, grooming, and styling
+            services tailored specifically to you. Step into our world of timeless style and
+            masculine elegance
           </p>
 
           <div className="mt-4 md:mt-8">
