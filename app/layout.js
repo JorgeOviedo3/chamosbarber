@@ -19,10 +19,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body suppressHydrationWarning={true} className={`${ rubik.variable } font-sans`}>
         <Navbar />
-        {children}
+        <div className="mt-[64px] md:mt-[70px]">{children}</div>
         <Footer />
       </body>
     </html>

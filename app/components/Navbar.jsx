@@ -1,9 +1,10 @@
 import Image from "next/image";
 import logo from "@/public/logo.webp";
+import { IoCall } from "react-icons/io5";
 
 export const Navbar = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-white shadow-lg fixed top-0 w-full z-[9999]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -14,7 +15,7 @@ export const Navbar = () => {
                 alt="chamos barber logo"
                 width={2975}
                 height={859}
-                className="h-[50px] w-fit"
+                className="h-[40px] md:h-[50px] w-fit"
               />
             </a>
           </div>
@@ -43,9 +44,12 @@ export const Navbar = () => {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-black hover:bg-black/80 px-5 py-2.5 text-sm font-medium text-white shadow"
+                  className="rounded-md bg-black hover:bg-black/90 duration-300 px-3 md:px-5 py-2.5 text-sm font-medium text-white shadow flex items-center gap-2"
                   href="/"
                 >
+                  <span>
+                    <IoCall />
+                  </span>
                   Call Us
                 </a>
               </div>

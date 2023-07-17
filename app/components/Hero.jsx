@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { IoLocation } from "react-icons/io5"
 
 export const Hero = () => {
   return (
-    <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
+    <section className="overflow-hidden flex flex-col-reverse sm:grid sm:grid-cols-2 sm:items-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
           <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -15,10 +16,11 @@ export const Hero = () => {
 
           <div className="mt-4 md:mt-8">
             <a
-              href="#"
-              className="inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-black/80 focus:outline-none"
+              href="#locations"
+              className="flex w-fit items-center gap-2 rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-black/80 focus:outline-none"
             >
-              Get Started Today
+              <IoLocation />
+              Our Locations
             </a>
           </div>
         </div>
