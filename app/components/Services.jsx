@@ -1,205 +1,117 @@
-import React from "react";
+import { TbMoodKid } from "react-icons/tb";
+import { GiMustache, GiHeartBottle } from "react-icons/gi";
+import { ImScissors } from "react-icons/im"; 
+import { BiSolidFace } from "react-icons/bi"
+import { SlMustache } from "react-icons/sl"
 
 export const Services = () => {
   return (
-    <section>
+    <section className="bg-black mb-[100px] py-[50px]">
       <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-          <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h2 className="text-3xl font-bold sm:text-4xl">Find your career path</h2>
+          <div className="mx-auto max-w-lg lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+            <h2 className="font-bold h2 text-gray-100">Our premier services for the modern man</h2>
 
-            <p className="mt-4 text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero aliquid sint
-              distinctio iure ipsum cupiditate? Quis, odit assumenda? Deleniti quasi inventore,
-              libero reiciendis minima aliquid tempora. Obcaecati, autem.
+            <p className="mt-4 text-gray-300">
+              At Chamos Barber Shop, we offer a range of premier services tailored to meet the grooming needs of the modern man. Our skilled barbers are experts in precision haircuts, classic shaves, beard trims, and stylish men's grooming. Step into our shop and indulge in an unforgettable grooming experience designed exclusively for you.
             </p>
 
             <a
               href="#"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="mt-8 inline-block rounded bg-gray-100 px-12 py-3 text-sm font-medium text-black transition hover:bg-gray-300 focus:outline-none"
             >
-              Get Started Today
+              See all services
             </a>
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+              <span className="inline-block rounded-lg bg-gray-100 p-3">
+                <BiSolidFace className="w-6 h-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Regular Haircut</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                Classic cuts for men.
               </p>
             </a>
 
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+              <span className="inline-block rounded-lg bg-gray-100 p-3">
+                <TbMoodKid className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Kids Haircut</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                Expert styling for kids.
               </p>
             </a>
 
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+                <GiMustache className="w-6 h-6"/>
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Senior Haircut</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300 text-gray-300">
+                Tailored grooming for seniors.
               </p>
             </a>
 
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+                <SlMustache className="w-6 h-6"/> 
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Mustache</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                Precision grooming for your 'stache.
               </p>
             </a>
 
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+                <ImScissors className="w-6 h-6"/>
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Scissor Haircut</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                Stylish scissor cuts for men.
               </p>
             </a>
 
             <a
-              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/accountant"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
+                <GiHeartBottle className="w-6 h-6"/>
               </span>
 
-              <h2 className="mt-2 font-bold">Accountant</h2>
+              <h2 className="mt-2 font-bold text-gray-100">Skin Fade</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                Trendy fades for modern men.
               </p>
             </a>
           </div>

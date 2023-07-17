@@ -23,8 +23,18 @@ export const Navbar = () => {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="/">
-                    About
+                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                    Contact Us
                   </a>
                 </li>
               </ul>

@@ -7,7 +7,7 @@ export const Footer = () => {
         <img
           src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
           alt=""
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover grayscale"
         />
       </div>
 
@@ -21,13 +21,13 @@ export const Footer = () => {
                 href="#"
                 className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
               >
-                0123456789
+                (407) 344-4410
               </a>
             </p>
 
             <ul className="mt-8 space-y-1 text-sm text-gray-700">
-              <li>Monday to Friday: 10am - 5pm</li>
-              <li>Weekend: 10am - 3pm</li>
+              <li>Monday to Saturday: 9am - 8pm</li>
+              <li>Sunday: 11am - 5pm</li>
             </ul>
 
             <ul className="mt-8 flex gap-6">
