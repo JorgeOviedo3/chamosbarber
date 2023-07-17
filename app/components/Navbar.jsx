@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "@/public/logo.webp";
 import { IoCall } from "react-icons/io5";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ export const Navbar = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="/">
+            <Link className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
               <Image
                 src={logo}
@@ -17,26 +18,26 @@ export const Navbar = () => {
                 height={859}
                 className="h-[40px] md:h-[50px] w-fit"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                  <Link className="text-gray-700 transition hover:text-gray-800" href="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                  <Link className="text-gray-700 transition hover:text-gray-800" href="/services">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-800" href="/">
+                  <Link className="text-gray-700 transition hover:text-gray-800" href="/contact-us">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

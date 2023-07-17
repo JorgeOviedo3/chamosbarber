@@ -1,192 +1,352 @@
 import { BiSolidFace } from "react-icons/bi";
-import { TbMoodKid } from "react-icons/tb";
-import { GiMustache, GiHeartBottle } from "react-icons/gi";
+import { TbEyeClosed, TbMoodKid } from "react-icons/tb";
+import { GiTowel, GiBeard, GiRazor } from "react-icons/gi";
 import { SlMustache } from "react-icons/sl";
+import { MdColorize, MdOutlineDesignServices } from "react-icons/md";
+import { RiVipCrownLine } from "react-icons/ri";
 import { ImScissors } from "react-icons/im";
-
-
+import { BsBrightnessAltHigh, BsEar } from "react-icons/bs";
 
 export const services = [
-    {
-      price: "35.00",
-      title: "Regular Haircut",
-      description: "Classic men's cuts, styled to perfection.",
-      duration: "35min",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "30.00",
-      title: "Kids Haircut",
-      duration: "35min",
-      description: "Expert styling for trendy kids.",
-      icon:<TbMoodKid className="w-6 h-6" />, 
-    },
-    {
-      price: "15.00",
-      title: "Design",
-      duration: "30min",
-      description: "Creative and personalized hair designs.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "35.00",
-      title: "Senior Haircut (60 yrs old & up)",
-      duration: "45min",
-      description: "Tailored grooming for seniors.",
-      icon:<GiMustache className="w-6 h-6" />, 
-    },
-    {
-      price: "40.00",
-      title: "Scissor Haircut",
-      duration: "45min",
-      description: "Stylish scissor cuts for men.",
-      icon:<ImScissors className="w-6 h-6" />, 
-    },
-    {
-      price: "40.00",
-      title: "Flat Top",
-      duration: "40min",
-      description: "Classic flat top cuts for a sharp look.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "35.00",
-      title: "Skin Fade",
-      duration: "35min",
-      description: "Trendy fades for a modern appearance.",
-      icon:<GiHeartBottle className="w-6 h-6" />, 
-    },
-    {
-      price: "50.00",
-      title: "Full Service Combo",
-      duration: "1h",
-      description: "Haircut + Beard + Eyebrows.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "85.00",
-      title: "Deluxe",
-      duration: "1h 30min",
-      description: "Haircut, Beard, Eyebrows, Hot Towel, Mask.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "35.00",
-      title: "Shape Up + Beard",
-      duration: "35 min",
-      description: "Precision shaping and grooming.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "8.00",
-      title: "Wash + Shampoo",
-      duration: "5min",
-      description: "Refreshing wash and shampoo service.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "10.00",
-      title: "Mustache",
-      duration: "10min",
-      description: "Expert grooming for your mustache.",
-      icon:<SlMustache className="w-6 h-6" />, 
-    },
-    {
-      price: "55.00",
-      title: "Full Service",
-      duration: "1h 30min",
-      description: "Cut, Wax on ear, Nose, Eyebrows",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "60.00",
-      title: "Haircut, Shampoo, Blow dry",
-      duration: "55min",
-      description: "Complete grooming experience.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "18.00",
-      title: "Ear Wax",
-      duration: "10min",
-      description: "Thorough ear wax removal.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "15.00",
-      title: "Wax Nose",
-      duration: "10min",
-      description: "Gentle and effective nose waxing.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "35.00",
-      title: "Blow Out",
-      duration: "30min",
-      description: "Stylish blowouts for a voluminous look.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "12.00",
-      title: "Eyebrow Blade",
-      duration: "10min",
-      description: "Sharp and defined eyebrow shaping.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "30.00",
-      title: "Beard Shave (cream)",
-      duration: "35min",
-      description: "Smooth and clean beard shaves.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "40.00",
-      title: "Hot Towel Shave",
-      duration: "35min",
-      description: "Traditional and relaxing shave experience.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "20.00+",
-      title: "Beard Color (only)",
-      duration: "40min",
-      description: "Vibrant coloring for your beard.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "60.00",
-      title: "Hair Color",
-      duration: "1h",
-      description: "Expert hair coloring services.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "80.00",
-      title: "Hair Bleach (only)",
-      duration: "1h",
-      description: "Professional hair bleaching services.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "50.00+",
-      title: "Toner",
-      duration: "30min",
-      description: "Toning services for perfect hair color.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "15.00",
-      title: "Goatee",
-      duration: "10min",
-      description: "Sculpted grooming for a neat goatee.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-    {
-      price: "45.00",
-      title: "UV Cuts",
-      duration: "45min",
-      description: "Haircuts with ultraviolet light technology.",
-      icon:<BiSolidFace className="w-6 h-6" />, 
-    },
-  ]
+  {
+    price: "35.00",
+    title: "Regular Haircut",
+    description: "Classic men's cuts, styled to perfection.",
+    duration: "35min",
+    icon: <BiSolidFace className="w-6 h-6" />,
+  },
+  {
+    price: "30.00",
+    title: "Kids Haircut",
+    duration: "35min",
+    description: "Expert styling for trendy kids.",
+    icon: <TbMoodKid className="w-6 h-6" />,
+  },
+  {
+    price: "15.00",
+    title: "Design",
+    duration: "30min",
+    description: "Creative and personalized hair designs.",
+    icon: <MdOutlineDesignServices className="w-6 h-6" />,
+  },
+  {
+    price: "35.00",
+    title: "Senior Haircut (60 yrs old & up)",
+    duration: "45min",
+    description: "Tailored grooming for seniors.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M15.146 3.5c-3.524 0-6.546 1.821-8.293 4.525a2.5 2.5 0 0 0-2.805 2.967l-.005-.001l.872 3.595a4.001 4.001 0 0 0 .95 7.25l.202 2.64l.001.014C6.413 28.288 9.323 31 13.051 31h5.987c3.617 0 6.637-2.702 6.982-6.51l.002-.023l.178-2.65a4.001 4.001 0 0 0 .885-7.23l.872-3.596h-.005a2.5 2.5 0 0 0-2.748-2.974C23.448 5.295 20.368 3.5 16.842 3.5h-1.697ZM9 10.5a2.501 2.501 0 0 1-1.729 2.379a8.132 8.132 0 0 0-.007 1.054l.081 1.062a1 1 0 0 1-.78 1.052a2.001 2.001 0 0 0 .302 3.949a1 1 0 0 1 .933.921l.26 3.4C8.318 27.114 10.396 29 13.05 29h5.988c2.565 0 4.732-1.893 4.99-4.68l.228-3.398a1 1 0 0 1 .914-.93a2 2 0 0 0 .265-3.945a1 1 0 0 1-.782-1.043l.072-1.071l.001-.01c.027-.352.03-.7.013-1.041a2.501 2.501 0 0 1-1.263-3.85C22.074 6.902 19.643 5.5 16.843 5.5h-1.697c-2.787 0-5.19 1.434-6.591 3.576c.28.404.445.895.445 1.424Zm.6 3.256l-.637-.764a.995.995 0 0 0 1.266 1.536l.006-.005l.008-.006a2.828 2.828 0 0 1 .56-.297a3.28 3.28 0 0 1 1.742-.18a.995.995 0 1 0 .31-1.967a5.283 5.283 0 0 0-2.784.295a4.817 4.817 0 0 0-.782.393a3.707 3.707 0 0 0-.289.2l-.022.018l-.009.007l-.003.003l-.002.001v.001l.636.765Zm13.336-.765l-.63.758l.631-.757a.995.995 0 0 1-1.266 1.536l-.006-.005l-.008-.006a2.836 2.836 0 0 0-.56-.297a3.28 3.28 0 0 0-1.742-.18a.995.995 0 1 1-.31-1.967a5.282 5.282 0 0 1 2.783.295c.334.132.597.277.783.393a3.705 3.705 0 0 1 .289.2l.022.018l.009.007l.003.003l.002.001v.001Zm-7.649 4.536l-.99 3.17a1.005 1.005 0 0 0 .97 1.303h1.466c.688 0 1.173-.662.97-1.304l-.99-3.17c-.213-.701-1.203-.701-1.426 0ZM16 23.895a5.603 5.603 0 0 1-2.583-.612c-.255-.13-.53.158-.369.39A3.53 3.53 0 0 0 16 25.25a3.53 3.53 0 0 0 2.952-1.577c.16-.241-.114-.52-.369-.39a5.574 5.574 0 0 1-2.583.612ZM11.542 15.4c-1.214 0-2.24.84-2.527 1.967a.512.512 0 0 0 .503.633h.8a1.664 1.664 0 1 1 3.209 0h.148a.428.428 0 0 0 .424-.504a2.607 2.607 0 0 0-2.557-2.096Zm.385 1.211a.947.947 0 0 1 .84 1.389h-1.679a.979.979 0 0 1-.108-.443c0-.172.046-.334.127-.473a.295.295 0 0 0 .544-.164a.301.301 0 0 0-.105-.229a.947.947 0 0 1 .381-.08Zm11.058.756a2.617 2.617 0 0 0-2.527-1.967a2.6 2.6 0 0 0-2.557 2.096a.428.428 0 0 0 .424.504h.148a1.603 1.603 0 0 1-.059-.443a1.65 1.65 0 0 1 1.659-1.665A1.664 1.664 0 0 1 21.682 18h.8a.512.512 0 0 0 .503-.633Zm-3.265-.692A.947.947 0 0 1 20.902 18h-1.678a.98.98 0 0 1-.11-.443a.94.94 0 0 1 .16-.525c.044.11.15.188.275.188a.3.3 0 0 0 .17-.545ZM13 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7.998 1.96a.5.5 0 0 1 .002.028v.012a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1 0-1h9a.5.5 0 0 1 .498.46Zm-2.28 8.168a.5.5 0 0 1 .707.038c.195.219.377.37.613.474c.24.106.574.18 1.094.18a.5.5 0 1 1 0 1c-.612 0-1.094-.086-1.498-.265c-.41-.18-.702-.44-.954-.721a.5.5 0 0 1 .039-.706Zm-5.293.01a.5.5 0 0 0-.707.017l-.016.016c-.017.015-.044.04-.082.071a2.562 2.562 0 0 1-1.62.578a.5.5 0 0 0 0 1a3.562 3.562 0 0 0 2.424-.957l.011-.011l.004-.004l.002-.002l.001-.001a.5.5 0 0 0-.017-.707Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "40.00",
+    title: "Scissor Haircut",
+    duration: "45min",
+    description: "Stylish scissor cuts for men.",
+    icon: <ImScissors className="w-6 h-6" />,
+  },
+  {
+    price: "40.00",
+    title: "Flat Top",
+    duration: "40min",
+    description: "Classic flat top cuts for a sharp look.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="currentColor"
+          d="M9.608 14.563c.521-.185 1.268-.326 2.255-.233a.5.5 0 1 0 .094-.996c-1.133-.106-2.026.053-2.685.287a.5.5 0 1 0 .336.942Zm12.57-.942c-.66-.234-1.552-.393-2.685-.287a.5.5 0 1 0 .094.996c.987-.093 1.734.048 2.255.233a.5.5 0 0 0 .336-.942ZM11.2 15.53c-1.45 0-2.67 1-3.01 2.34c-.1.38.2.75.6.75h.958a1.985 1.985 0 0 1 1.912-2.5a1.985 1.985 0 0 1 1.913 2.5h.157c.32 0 .57-.29.51-.6a3.093 3.093 0 0 0-3.04-2.49Zm9.62 0c1.45 0 2.67 1 3.01 2.34c.1.38-.2.75-.6.75h-.958a1.985 1.985 0 0 0-1.912-2.5a1.985 1.985 0 0 0-1.913 2.5h-.157c-.32 0-.57-.29-.51-.6a3.093 3.093 0 0 1 3.04-2.49Z"
+        />
+        <path
+          fill="currentColor"
+          d="M19.429 17.459a1.124 1.124 0 0 0-.199.641c0 .19.05.37.13.53h2a1.129 1.129 0 0 0-1.398-1.588a.35.35 0 1 1-.533.417Zm-6.639.641a1.129 1.129 0 0 0-1.575-1.04a.349.349 0 0 1-.235.61a.35.35 0 0 1-.289-.152a1.13 1.13 0 0 0-.031 1.112h2c.08-.16.13-.34.13-.53Zm3.203 3.9c.68 0 1.27-.345 1.63-.873c.32-.477-.02-1.127-.59-1.127h-2.07c-.57 0-.91.65-.59 1.127c.35.528.95.873 1.62.873Zm.009 1.174a6.473 6.473 0 0 1-3.016-.733a.328.328 0 0 0-.429.472a4.1 4.1 0 0 0 3.445 1.887a4.1 4.1 0 0 0 3.445-1.887c.18-.281-.13-.622-.43-.472a6.354 6.354 0 0 1-3.015.733Z"
+        />
+        <path
+          fill="currentColor"
+          d="M25.107 4.726c.246.55.688.98 1.238 1.2a4.08 4.08 0 0 1 2.534 3.892a4.093 4.093 0 0 1-1.032 2.632a2.97 2.97 0 0 0-.67 1.289a4.251 4.251 0 0 1-.372 8.134C25.865 27.38 21.359 31 16.005 31c-5.355 0-9.86-3.622-10.8-9.13a4.251 4.251 0 0 1-.39-8.122l-.058-1.718c-.176-4.336 2.847-8.038 6.927-8.86a4.426 4.426 0 0 1 2.855-1.176c.953-.03 1.836.25 2.573.74c.442.3 1.022.3 1.464 0c.736-.49 1.63-.77 2.583-.74c1.768.06 3.28 1.171 3.948 2.732ZM6.76 12.073l.082 2.418a1 1 0 0 1-.875 1.027a2.25 2.25 0 0 0 .173 4.48a1 1 0 0 1 .947.892C7.612 25.792 11.41 29 16.005 29c4.595 0 8.393-3.208 8.918-8.11a1 1 0 0 1 .95-.892a2.25 2.25 0 0 0 .147-4.484a1 1 0 0 1-.89-1.04l.093-2.042a2.152 2.152 0 0 0-1.285-.423H18.86a6.63 6.63 0 0 1-5.313-2.681a.206.206 0 0 0-.108-.08h-.128a.207.207 0 0 0-.157.21v1.73a.817.817 0 0 1-.806.821c-1.728 0-3.201-1.1-3.81-2.641a.176.176 0 0 0-.216-.11a.18.18 0 0 0-.138.15c-.157.93-.59 1.79-1.228 2.451c-.068.07-.134.142-.196.214Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "35.00",
+    title: "Skin Fade",
+    duration: "35min",
+    description: "Trendy fades for a modern appearance.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="currentColor"
+          d="M8.24 25.14L7 26.67a13.79 13.79 0 0 0 4.18 2.44l.69-1.87a12 12 0 0 1-3.63-2.1zM4.19 18l-2 .41A14.09 14.09 0 0 0 3.86 23l1.73-1a12.44 12.44 0 0 1-1.4-4zm7.63-13.24l-.69-1.87A13.79 13.79 0 0 0 7 5.33l1.24 1.53a12 12 0 0 1 3.58-2.1zM5.59 10L3.86 9a14.37 14.37 0 0 0-1.64 4.59l2 .34A12.05 12.05 0 0 1 5.59 10zM16 2v2a12 12 0 0 1 0 24v2a14 14 0 0 0 0-28z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "50.00",
+    title: "Full Service Combo",
+    duration: "1h",
+    description: "Haircut + Beard + Eyebrows.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+      >
+        <g
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
+        >
+          <path d="M15 28V15.652C15 13 18 10 24 10s9 3 9 5.652V28m-21 6v-6h24v6H12Zm8-30h8" />
+          <path d="M8 16v12h32V16M17 43h14m-7-9v9m0-39v6" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    price: "85.00",
+    title: "Deluxe",
+    duration: "1h 30min",
+    description: "Haircut, Beard, Eyebrows, Hot Towel, Mask.",
+    icon: <RiVipCrownLine className="w-6 h-6" />,
+  },
+  {
+    price: "35.00",
+    title: "Shape Up + Beard",
+    duration: "35 min",
+    description: "Precision shaping and grooming.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <g fill="currentColor">
+          <path d="M20.458 15.4c1.214 0 2.24.84 2.527 1.967a.512.512 0 0 1-.503.633h-.8a1.664 1.664 0 0 0-1.61-2.108a1.65 1.65 0 0 0-1.658 1.665c0 .157.02.305.06.443h-.149a.428.428 0 0 1-.424-.504a2.6 2.6 0 0 1 2.557-2.096ZM9.015 17.367a2.607 2.607 0 0 1 5.085.128a.428.428 0 0 1-.425.505h-.148c.04-.138.059-.286.059-.443c0-.926-.74-1.665-1.659-1.665A1.664 1.664 0 0 0 10.318 18h-.8a.512.512 0 0 1-.503-.633Z" />
+          <path d="M19.115 17.557a.94.94 0 0 1 .16-.525c.043.11.15.188.274.188a.3.3 0 0 0 .17-.545A.947.947 0 0 1 20.902 18h-1.677a.98.98 0 0 1-.11-.443Zm-7.188-.946a.947.947 0 0 1 .84 1.389h-1.679a.979.979 0 0 1-.108-.443c0-.172.046-.334.127-.473a.295.295 0 0 0 .544-.164a.301.301 0 0 0-.105-.229a.947.947 0 0 1 .381-.08ZM9.6 13.9l-.637-.765a.995.995 0 0 0 1.266 1.537l.003-.003l.011-.008c.019-.014.053-.038.102-.07c.1-.06.254-.147.458-.228a3.3 3.3 0 0 1 1.742-.18a.995.995 0 1 0 .31-1.966a5.284 5.284 0 0 0-2.784.295a4.817 4.817 0 0 0-.782.393a3.707 3.707 0 0 0-.289.2l-.022.018l-.009.007l-.003.003l-.002.001s-.001.001.636.766Zm13.336-.765l-.63.758l.63-.758a.996.996 0 0 1-1.265 1.537l-.014-.011a2.835 2.835 0 0 0-.56-.298a3.3 3.3 0 0 0-1.742-.18a.995.995 0 1 1-.31-1.966a5.283 5.283 0 0 1 2.783.295c.334.132.597.277.783.393a3.705 3.705 0 0 1 .289.2l.022.018l.009.007l.003.003l.002.002ZM16 24.234c-.789 0-1.53-.167-2.152-.46c-.213-.097-.442.12-.308.293c.52.71 1.427 1.183 2.46 1.183s1.94-.473 2.46-1.183c.134-.18-.095-.39-.308-.292a5.067 5.067 0 0 1-2.152.46Z" />
+          <path d="m24.986 5.978l.8.398c1.401.697 2.201 2.288 1.901 3.979l-.799 4.118a4.001 4.001 0 0 1-.688 7.344l-.178 2.65l-.002.023c-.345 3.808-3.365 6.51-6.982 6.51H13.05c-3.728 0-6.638-2.712-6.983-6.51l-.002-.024l-.173-2.621a4.001 4.001 0 0 1-.793-7.366l-.82-4.224c-.2-1.591.6-3.182 2.001-3.879l.8-.398c.5-.298 1-.696 1.5-1.094l1.801-1.89c1.1-.994 2.701-1.292 4.101-.596a5.49 5.49 0 0 0 3.101 0c1.5-.497 3.201-.1 4.402.995l1.5 1.491c.4.498.9.796 1.5 1.094Zm-.26 7.946a7.965 7.965 0 0 0-.037-1.605c-.297-.38-.503-.874-.503-1.368v-.566a7.735 7.735 0 0 0-1.3-2.137c-1.33-.295-3.643-.678-6.802-.678c-3.21 0-5.546.395-6.866.692a7.935 7.935 0 0 0-1.236 2.04v.65c0 .537-.163 1.074-.56 1.466a8.41 8.41 0 0 0-.049 1.51l.07 1.057a1 1 0 0 1-.498.933L9.4 23.2c.1.5.7.6 1 .3l.8-.7c.7-.6 1.5-.8 2.3-.8h1.767a1.005 1.005 0 0 1-.97-1.304l.99-3.17c.223-.701 1.213-.701 1.426 0l.99 3.17a1.009 1.009 0 0 1-.97 1.304H18.5c.9 0 1.7.2 2.3.8l.8.7c.3.3.9.1 1-.3l2.533-7.273a1 1 0 0 1-.48-.923l.072-1.071l.001-.01ZM5 18a2 2 0 0 0 1.734 1.983l-.183-3.115l.004.135c-.373 0-.698-.186-.914-.47A1.996 1.996 0 0 0 5 18Zm20.515-1l-.204 2.976a2 2 0 0 0 1.073-3.42c-.186.277-.483.44-.87.444ZM13 24.5V26c0 .9.8 1.7 1.8 1.7c.2 0 .3-.2.3-.3v-.1c0-.5.4-.9.9-.9s.9.4.9.9v.1c0 .2.2.3.3.3c.9 0 1.8-.7 1.8-1.7v-1.5c0-.5-.346-.9-1-.9h-4c-.634 0-1 .4-1 .9Z" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    price: "8.00",
+    title: "Wash + Shampoo",
+    duration: "5min",
+    description: "Refreshing wash and shampoo service.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="512"
+        height="512"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="m240.801 293.826l-23.851 23.851l23.8 47.6l23.417-24.718l-23.366-46.733zm15.177 101.906l22.299 44.6l23.418-24.719l-22.3-44.599l-23.417 24.718zM438.926 202.62L415.8 227.032l44.423 21.246l23.127-24.412l-44.424-21.246zm-96.323-10.596l42.861 20.499l23.127-24.411l-41.992-20.084l-23.996 23.996zm-34.818 149.022l28.523 38.031l22.325-23.565l-28.523-38.031l-22.325 23.565zm2.848-49.534l-28.936-38.582l-22.857 22.857l29.468 39.29l22.325-23.565zm-9.89-57.628l36.683 29.347l22.085-23.313l-36.001-28.801l-22.767 22.767zm61.758 49.407l36.721 29.377l22.085-23.313l-36.721-29.376l-22.085 23.312zm-13.814-182.604l-26.24 26.239l-24.718-24.718a111.609 111.609 0 0 0-157.839 0c-.342.341-.673.689-1.009 1.034A77.974 77.974 0 0 0 16 166.988V408h32V166.988a45.975 45.975 0 0 1 72.048-37.868a111.809 111.809 0 0 0 19.842 130.929l24.717 24.717l-23.92 23.921l20 20l208-208ZM185.006 259.911l-22.489-22.489A79.611 79.611 0 0 1 275.1 124.835l22.489 22.49Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "10.00",
+    title: "Mustache",
+    duration: "10min",
+    description: "Expert grooming for your mustache.",
+    icon: <SlMustache className="w-6 h-6" />,
+  },
+  {
+    price: "55.00",
+    title: "Full Service",
+    duration: "1h 30min",
+    description: "Cut, Wax on ear, Nose, Eyebrows",
+    icon: <BiSolidFace className="w-6 h-6" />,
+  },
+  {
+    price: "60.00",
+    title: "Haircut, Shampoo, Blow dry",
+    duration: "55min",
+    description: "Complete grooming experience.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <g fill="currentColor">
+          <path d="m14.296 20.696l.991-3.17c.223-.701 1.213-.701 1.426 0l.99 3.17a1.009 1.009 0 0 1-.97 1.304h-1.466a1.005 1.005 0 0 1-.97-1.304ZM16 23.895a5.603 5.603 0 0 1-2.583-.612c-.255-.13-.53.158-.369.39A3.53 3.53 0 0 0 16 25.25a3.53 3.53 0 0 0 2.952-1.577c.16-.241-.114-.52-.369-.39a5.574 5.574 0 0 1-2.583.612Zm4.458-8.495c1.214 0 2.24.84 2.527 1.967a.512.512 0 0 1-.503.633h-.8a1.664 1.664 0 0 0-1.61-2.108a1.65 1.65 0 0 0-1.658 1.665c0 .157.02.305.06.443h-.149a.428.428 0 0 1-.424-.504a2.6 2.6 0 0 1 2.557-2.096ZM9.015 17.367a2.607 2.607 0 0 1 5.085.128a.428.428 0 0 1-.425.505h-.148c.04-.138.059-.286.059-.443c0-.926-.74-1.665-1.659-1.665A1.664 1.664 0 0 0 10.318 18h-.8a.512.512 0 0 1-.503-.633Z" />
+          <path d="M19.115 17.557a.94.94 0 0 1 .16-.525c.043.11.15.188.274.188a.3.3 0 0 0 .17-.545A.947.947 0 0 1 20.903 18h-1.678a.98.98 0 0 1-.11-.443Zm-7.188-.946a.947.947 0 0 1 .84 1.389h-1.679a.979.979 0 0 1-.108-.443c0-.172.046-.334.127-.473a.295.295 0 0 0 .544-.164a.3.3 0 0 0-.105-.229a.947.947 0 0 1 .381-.08ZM8.832 14.54a1 1 0 0 0 1.4.135l.005-.004l.01-.007a2.83 2.83 0 0 1 .559-.297a3.29 3.29 0 0 1 1.738-.18a1 1 0 1 0 .312-1.975a5.288 5.288 0 0 0-2.786.296a4.83 4.83 0 0 0-.784.393a3.752 3.752 0 0 0-.289.2l-.022.018l-.009.007l-.003.003l-.002.002H8.96a1 1 0 0 0-.128 1.41Zm14.108-1.409a1 1 0 1 1-1.286 1.533a2.83 2.83 0 0 0-.559-.297a3.29 3.29 0 0 0-1.739-.18a1 1 0 1 1-.312-1.975a5.288 5.288 0 0 1 2.786.296c.334.132.598.277.784.393a3.757 3.757 0 0 1 .311.219l.009.006l.003.003l.002.002Z" />
+          <path d="M17.286 1.443a4.487 4.487 0 0 1-2.443.018c-1.775-.838-3.771-.438-5.131.792a1.005 1.005 0 0 0-.054.052l-1.753 1.84c-.478.38-.898.71-1.305.956l-.764.38c-1.809.899-2.797 2.917-2.548 4.899l.01.066l.91 4.689a4.001 4.001 0 0 0 1.655 6.701l.204 2.64l.001.014C6.413 28.288 9.323 31 13.051 31h5.987c3.617 0 6.637-2.702 6.982-6.51l.002-.023l.178-2.65a4.001 4.001 0 0 0 1.58-6.693l.889-4.579l.003-.016c.373-2.102-.62-4.143-2.44-5.048l-.8-.398c-.57-.283-.907-.503-1.167-.825a1.006 1.006 0 0 0-.074-.083l-1.5-1.492l-.032-.03c-1.446-1.318-3.512-1.82-5.373-1.21Zm9.441 15.548a2 2 0 0 1-1.557 3.002a1 1 0 0 0-.914.93l-.228 3.398C23.77 27.107 21.603 29 19.038 29H13.05c-2.656 0-4.734-1.885-4.99-4.684l-.26-3.399a1 1 0 0 0-.933-.921a2 2 0 0 1-1.595-3.004c.04.005.082.008.124.008H6.52a1 1 0 0 0 .997-1.07a93.239 93.239 0 0 0-.135-1.734c.01-.296.143-.513.197-.553a.997.997 0 0 0 .107-.093l.265-.263c.767-.637 1.03-1.543 1.03-2.336v-1.59l.001-.016a.993.993 0 0 0 .041-.009c1.134-.282 3.553-.766 7.06-.766c3.502 0 5.92.482 7.056.764a.137.137 0 0 0 .047.042v1.575c0 .843.38 1.626.873 2.173l.134.266c.048.096.112.184.188.26a.97.97 0 0 1 .305.643c-.048.491-.095 1.12-.131 1.638A1 1 0 0 0 25.552 17h1.04a.993.993 0 0 0 .135-.01ZM9.306 5.574l1.773-1.86c.816-.721 1.964-.915 2.96-.42c.05.025.104.046.159.062a6.483 6.483 0 0 0 3.7-.009c1.13-.374 2.45-.085 3.399.77l1.447 1.44c.534.644 1.18 1.01 1.797 1.317l.8.398c.979.486 1.586 1.624 1.363 2.9l-.498 2.567a3.11 3.11 0 0 0-.292-.38l-.134-.265a1 1 0 0 0-.189-.26c-.248-.247-.405-.6-.405-.883v-1.59c0-1.036-.794-1.776-1.559-1.966c-1.266-.315-3.849-.825-7.543-.825c-3.675 0-6.25.505-7.524.82c-.983.208-1.578 1.036-1.578 1.97v1.591c0 .385-.126.652-.323.81a.99.99 0 0 0-.083.073l-.258.256a2.297 2.297 0 0 0-.539.638l-.51-2.628c-.137-1.19.473-2.34 1.457-2.828l.8-.398a.894.894 0 0 0 .068-.037c.558-.333 1.102-.766 1.583-1.149l.026-.02a1 1 0 0 0 .103-.094Z" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    price: "18.00",
+    title: "Ear Wax",
+    duration: "10min",
+    description: "Thorough ear wax removal.",
+    icon: <BsEar className="w-6 h-6" />,
+  },
+  {
+    price: "15.00",
+    title: "Nose Wax",
+    duration: "10min",
+    description: "Gentle and effective nose waxing.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 32 32">
+        <path
+          fill="currentColor"
+          d="M27.5 21c0-2.491-1.934-4.307-5.3-4.98l-.094-.02a1.964 1.964 0 0 1-.625-1.193L20.118 7.84C19.936 6.4 18.852 3.75 16 3.75c-2.879 0-3.956 2.7-4.112 4.055l-1.358 6.952c-.213.853-.51 1.173-.636 1.244l-.09.019c-3.371.673-5.3 2.489-5.3 4.98a5.294 5.294 0 0 0 2.708 4.483c.013.008.02.021.033.028c.055.03.11.052.164.08l.064.031a3.2 3.2 0 0 0 1.448.372A.334.334 0 0 0 9 26l.11-.006h.029a4.825 4.825 0 0 1 1.925.16c.07.025.135.064.19.114A6.4 6.4 0 0 0 16 28.25a6.4 6.4 0 0 0 4.75-1.988a.379.379 0 0 1 .107-.077h.007c.014-.006.034-.012.049-.019a4.78 4.78 0 0 1 1.979-.167L23 26c.029 0 .059 0 .088-.006a3.23 3.23 0 0 0 1.43-.367l.085-.041l.156-.075c.013-.007.02-.02.033-.028A5.293 5.293 0 0 0 27.5 21Zm-3.07 2.279a3.382 3.382 0 0 0-2.18-.779a3.161 3.161 0 0 0-3.212 2.649A4.519 4.519 0 0 1 16 26.25a4.52 4.52 0 0 1-3.038-1.1A3.16 3.16 0 0 0 9.75 22.5a3.382 3.382 0 0 0-2.18.779A3.223 3.223 0 0 1 6.5 21c0-2.038 2.536-2.783 3.664-3.013c.47-.066 1.735-.463 2.317-2.795l1.381-7.074c.031-.243.352-2.368 2.138-2.368s2.105 2.119 2.137 2.367l1.393 7.126c.574 2.292 1.84 2.681 2.309 2.744c1.129.231 3.661.976 3.661 3.013a3.223 3.223 0 0 1-1.07 2.279Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "35.00",
+    title: "Blow Out",
+    duration: "30min",
+    description: "Stylish blowouts for a voluminous look.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M10 12.73A70.39 70.39 0 0 0 17 11V4s-6.5-2-9.5-2a5.5 5.5 0 0 0-1.38 10.82L7 19h1a3 3 0 0 0 1.46 2.33A3.15 3.15 0 0 1 11 24h1a4.12 4.12 0 0 0-1.91-3.45C9.39 20 9 19.63 9 19h1M4 7.5A3.5 3.5 0 0 1 7.5 4A37.08 37.08 0 0 1 15 5.5v4A37.08 37.08 0 0 1 7.5 11A3.5 3.5 0 0 1 4 7.5M22 9a4.32 4.32 0 0 1-2.22-.55A3.4 3.4 0 0 0 18 8V7a4.32 4.32 0 0 1 2.22.55A3.4 3.4 0 0 0 22 8m0-2a3.4 3.4 0 0 1-1.78-.45A4.32 4.32 0 0 0 18 5v1a3.4 3.4 0 0 1 1.78.45A4.32 4.32 0 0 0 22 7m0 3a3.4 3.4 0 0 1-1.78-.45A4.32 4.32 0 0 0 18 9v1a3.4 3.4 0 0 1 1.78.45A4.32 4.32 0 0 0 22 11M9 7.5A1.5 1.5 0 1 1 7.5 6A1.5 1.5 0 0 1 9 7.5Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "12.00",
+    title: "Eyebrow Blade",
+    duration: "10min",
+    description: "Sharp and defined eyebrow shaping.",
+    icon: <TbEyeClosed className="w-6 h-6" />,
+  },
+  {
+    price: "30.00",
+    title: "Beard Shave (cream)",
+    duration: "35min",
+    description: "Smooth and clean beard shaves.",
+    icon: <GiRazor className="w-6 h-6" />,
+  },
+  {
+    price: "40.00",
+    title: "Hot Towel Shave",
+    duration: "35min",
+    description: "Traditional and relaxing shave experience.",
+    icon: <GiTowel className="w-6 h-6" />,
+  },
+  {
+    price: "20.00+",
+    title: "Beard Color (only)",
+    duration: "40min",
+    description: "Vibrant coloring for your beard.",
+    icon: <GiBeard className="h-6 w-6" />,
+  },
+  {
+    price: "60.00",
+    title: "Hair Color",
+    duration: "1h",
+    description: "Expert hair coloring services.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5c0 .12.05.23.13.33c.41.47.64 1.06.64 1.67A2.5 2.5 0 0 1 12 22zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5a.54.54 0 0 0-.14-.35c-.41-.46-.63-1.05-.63-1.65a2.5 2.5 0 0 1 2.5-2.5H16c2.21 0 4-1.79 4-4c0-3.86-3.59-7-8-7z"
+        />
+        <circle cx="6.5" cy="11.5" r="1.5" fill="currentColor" />
+        <circle cx="9.5" cy="7.5" r="1.5" fill="currentColor" />
+        <circle cx="14.5" cy="7.5" r="1.5" fill="currentColor" />
+        <circle cx="17.5" cy="11.5" r="1.5" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    price: "80.00",
+    title: "Hair Bleach (only)",
+    duration: "1h",
+    description: "Professional hair bleaching services.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M12 21q-3.325 0-5.663-2.313T4 13.1q0-1.65.625-3.05t1.725-2.5L12 2l5.65 5.55q1.1 1.1 1.725 2.5T20 13.1q0 3.275-2.337 5.588T12 21Zm0-2V4.8L7.75 9q-.875.825-1.313 1.863T6 13.1q0 2.425 1.75 4.163T12 19Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    price: "50.00+",
+    title: "Toner",
+    duration: "30min",
+    description: "Toning services for perfect hair color.",
+    icon: <MdColorize className="w-6 h-6" />,
+  },
+  {
+    price: "15.00",
+    title: "Goatee",
+    duration: "10min",
+    description: "Sculpted grooming for a neat goatee.",
+    icon: <BiSolidFace className="w-6 h-6" />,
+  },
+  {
+    price: "45.00",
+    title: "UV Cuts",
+    duration: "45min",
+    description: "Haircuts with ultraviolet light technology.",
+    icon: <BsBrightnessAltHigh className="w-6 h-6" />,
+  },
+];
