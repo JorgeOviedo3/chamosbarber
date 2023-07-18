@@ -39,7 +39,7 @@ export const Footer = () => {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-black transition hover:opacity-75"
                 >
                   <span className="sr-only">Facebook</span>
 
@@ -63,7 +63,7 @@ export const Footer = () => {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-black transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -87,7 +87,7 @@ export const Footer = () => {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-black transition hover:opacity-75"
                 >
                   <span className="sr-only">Twitter</span>
 
@@ -106,7 +106,7 @@ export const Footer = () => {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p className="font-medium text-gray-900">Locations</p>
+              <p className="font-medium text-black">Locations</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
@@ -128,7 +128,7 @@ export const Footer = () => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-900">Company</p>
+              <p className="font-medium text-black">Company</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>

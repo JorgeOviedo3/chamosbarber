@@ -1,3 +1,4 @@
+import { ContactCta } from "./components/ContactCta";
 import { Hero } from "./components/Hero";
 import { NewHero } from "./components/NewHero";
 import { Services } from "./components/Services";
@@ -10,6 +11,7 @@ export default function Home() {
       <NewHero />
       <GridStores />
       <Services />
+      <ContactCta />
     </div>
   );
 }
