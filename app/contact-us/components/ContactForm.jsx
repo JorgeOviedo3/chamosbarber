@@ -17,16 +17,9 @@ export const ContactForm = () => {
   // };
 
   return (
-    <form className="">
+    <form className="mb-14">
       <div className="flex flex-wrap mb-2">
         <div className="w-full px-3 mb-2 md:mb-0">
-          <p className="font-bold text-2xl mb-2">Get in Touch</p>
-          <p className="mb-4 lg:mb-10">
-            Fill out the form below to get in touch with us. Please provide as much information as
-            possible so that we can better assist you. We strive to respond to all inquiries within
-            24 hours. Thank you for choosing Chamos Barber!
-          </p>
-
           <label className="block uppercase tracking-wide text-gray-900 mb-2" htmlFor="name">
             Full Name
           </label>
@@ -46,7 +39,7 @@ export const ContactForm = () => {
             Email
           </label>
           <input
-            className="appearance-none block w-full bg-gray-50 text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-50 text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white "
             name="user_email"
             type="email"
             placeholder="janedoe@mail.com"
@@ -60,18 +53,18 @@ export const ContactForm = () => {
             Inquiry
           </label>
           <textarea
-            className=" no-resize appearance-none block w-full bg-gray-50 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+            className=" no-resize appearance-none block w-full bg-gray-50 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white  h-48 resize-none"
             name="message"
             required
             minLength={10}
-            placeholder="cuentanos tu historia..."
+            placeholder="Tell us your inquiry..."
           ></textarea>
         </div>
       </div>
       <div className="md:flex md:items-center">
         <div className="md:w-1/3 px-3">
           <button
-            className="w-full lg:w-40 py-4 px-2 bg-black text-white font-bold rounded flex text-lg items-center justify-center uppercase mt-2 hover:bg-secondary duration-300"
+            className="w-full py-4 px-2 bg-black text-white font-bold rounded flex text-lg items-center justify-center uppercase mt-2 hover:bg-secondary duration-300"
             type="submit"
           >
             Send

@@ -20,12 +20,27 @@ const page = () => {
 
       <div className="max-w-screen-xl mb-10 mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="flex flex-col gap-y-4 lg:flex-row justify-between">
-          <div className="w-full lg:w-4/6 lg:pr-4">
+          <div className="w-full lg:w-4/6 lg:pr-10">
+            <p className="font-bold text-2xl mb-2">Get in touch</p>
+            <p className="mb-4 lg:mb-10 text-justify">
+              Fill out the form below to get in touch with us. Please provide as much information as
+              possible so that we can better assist you. We strive to respond to all inquiries
+              within 24 hours. Thank you for choosing Chamos Barber!
+            </p>
             <ContactForm />
+            <p className="font-bold text-2xl mb-2">Contact us directly</p>
+            <p className="mb-4 lg:mb-10 text-justify">Use this to contact us directly.</p>
+            {stores.map((store) => (
+              <div className="bg-gray-50 p-4 mb-4 rounded-md">
+                <p>{store.name}</p>
+                <p>{store.address}</p>
+                <a href={`tel:${store.phone}`}>{store.phone}</a>
+              </div>
+            ))}
           </div>
           <div className=" flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <p className="font-bold text-lg">Social Networks</p>
+              <p className="font-bold text-lg ">Our Networks</p>
               <div className="flex items-center justify-around">
                 <Link
                   href="/"
