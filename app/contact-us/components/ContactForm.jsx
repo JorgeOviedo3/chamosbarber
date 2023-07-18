@@ -20,7 +20,7 @@ export const ContactForm = () => {
     <form className="mb-14">
       <div className="flex flex-wrap mb-2">
         <div className="w-full px-3 mb-2 md:mb-0">
-          <label className="block uppercase tracking-wide text-gray-900 mb-2" htmlFor="name">
+          <label className="block tracking-wide text-gray-900 mb-2" htmlFor="name">
             Full Name
           </label>
           <input
@@ -35,7 +35,7 @@ export const ContactForm = () => {
       </div>
       <div className="flex flex-wrap mb-2">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-gray-900 mb-2" htmlFor="email">
+          <label className="block  tracking-wide text-gray-900 mb-2" htmlFor="email">
             Email
           </label>
           <input
@@ -49,7 +49,7 @@ export const ContactForm = () => {
       </div>
       <div className="flex flex-wrap mb-2">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-gray-900 mb-2" htmlFor="message">
+          <label className="block tracking-wide text-gray-900 mb-2" htmlFor="message">
             Inquiry
           </label>
           <textarea

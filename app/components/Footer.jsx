@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -137,15 +138,15 @@ export const Footer = () => {
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link href="/contact-us" className="text-gray-700 transition hover:opacity-75">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Locations
-                  </a>
+                  <Link href="/services" className="text-gray-700 transition hover:opacity-75">
+                    Services
+                  </Link>
                 </li>
               </ul>
             </div>

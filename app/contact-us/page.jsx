@@ -31,7 +31,7 @@ const page = () => {
             <p className="font-bold text-2xl mb-2">Contact us directly</p>
             <p className="mb-4 lg:mb-10 text-justify">Use this to contact us directly.</p>
             {stores.map((store) => (
-              <div className="bg-gray-50 p-4 mb-4 rounded-md">
+              <div key={store.name} className="bg-gray-50 p-4 mb-4 rounded-md">
                 <p>{store.name}</p>
                 <p>{store.address}</p>
                 <a href={`tel:${store.phone}`}>{store.phone}</a>
@@ -40,7 +40,7 @@ const page = () => {
           </div>
           <div className=" flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <p className="font-bold text-lg ">Our Networks</p>
+              <p className=" text-lg ">Our Networks:</p>
               <div className="flex items-center justify-around">
                 <Link
                   href="/"
@@ -69,7 +69,7 @@ const page = () => {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="font-bold text-lg">Our Locations</p>
+              <p className=" text-lg">Our Locations:</p>
               {stores.map((store) => (
                 <SingleStore key={store.name} {...store} />
               ))}
