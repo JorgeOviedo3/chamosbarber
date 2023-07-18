@@ -1,21 +1,21 @@
 import Image from "next/image";
-import logo from "@/public/logo.webp";
+import logosmall from "@/public/logosmall.webp";
 import { IoCall } from "react-icons/io5";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <header className="bg-white shadow-lg fixed top-0 w-full z-[9999]">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <header className="bg-gradient-to-b from-black to-black/50 backdrop-blur-md text-white shadow-lg fixed top-0 w-full z-[9999]">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 py-2 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Link className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
               <Image
-                src={logo}
+                src={logosmall}
                 alt="chamos barber logo"
-                width={2975}
-                height={859}
+                width={250}
+                height={250}
                 className="h-[40px] md:h-[50px] w-fit"
               />
             </Link>
@@ -25,17 +25,17 @@ export const Navbar = () => {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link className="text-gray-700 transition hover:text-gray-800" href="/">
+                  <Link className="" href="/">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-gray-700 transition hover:text-gray-800" href="/services">
+                  <Link className="" href="/services">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-gray-700 transition hover:text-gray-800" href="/contact-us">
+                  <Link className="" href="/contact-us">
                     Contact Us
                   </Link>
                 </li>
@@ -45,7 +45,7 @@ export const Navbar = () => {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-black hover:bg-black/90 duration-300 px-3 md:px-5 py-2.5 text-sm font-medium text-white shadow flex items-center gap-2"
+                  className="rounded-md bg-white hover:bg-black/10 duration-300 px-3 md:px-5 py-2.5 text-sm font-medium text-black shadow flex items-center gap-2"
                   href="/"
                 >
                   <span>

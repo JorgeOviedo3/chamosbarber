@@ -30,13 +30,20 @@ const page = () => {
             <ContactForm />
             <p className="font-bold text-2xl mb-2">Contact us directly</p>
             <p className="mb-4 lg:mb-10 text-justify">Use this to contact us directly.</p>
-            {stores.map((store) => (
-              <div key={store.name} className="bg-gray-50 p-4 mb-4 rounded-md">
-                <p>{store.name}</p>
-                <p>{store.address}</p>
-                <a href={`tel:${store.phone}`}>{store.phone}</a>
-              </div>
-            ))}
+            <div className="flex gap-2 flex-col">
+              {stores.map((store) => (
+                <div
+                  key={store.name}
+                  className="hover:border-gray-300 hover:ring-1 hover:ring-gray-300 h-[152px] border-gray-200 border p-4 mb-4 rounded-md "
+                >
+                  <p className="text-gray-900">{store.name}</p>
+                  <p>{store.address}</p>
+                  <a className="underline text-gray-700" href={`tel:${store.phone}`}>
+                    {store.phone}
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
           <div className=" flex flex-col gap-8">
             <div className="flex flex-col gap-4">

@@ -2,12 +2,13 @@ import { AiFillSchedule } from "react-icons/ai";
 import { SiStylelint } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
-export const SingleStore = ({ name, address, phone, barbers, image }) => {
+export const SingleStore = ({ name, address, phone, barbers, image, id }) => {
   return (
-    <a
-      href="#"
-      className="block rounded-lg p-4 shadow-sm shadow-indigo-100 bg-gray-100 hover:scale-105 duration-300 ease-in"
+    <Link
+      href={`/locations/${id}`}
+      className="block rounded-lg p-4 border bg-gray-100 border-gray-200 shadow-md hover:border-gray-300 hover:ring-1 hover:ring-gray-300 hover:scale-105 duration-300"
     >
       <Image
         width={536}
@@ -62,6 +63,6 @@ export const SingleStore = ({ name, address, phone, barbers, image }) => {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };

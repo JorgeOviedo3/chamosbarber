@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body suppressHydrationWarning={true} className={`${rubik.variable} font-sans`}>
         <Navbar />
-        <div className="mt-[64px]">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>

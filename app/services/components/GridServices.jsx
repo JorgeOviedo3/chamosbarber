@@ -23,6 +23,12 @@ export const GridServices = () => {
             <SingleServiceCard key={service.title} {...service} />
           ))}
         </div>
+        <p className="mb-4 text-xl">Color</p>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-4 mb-8">
+          {services.colors.map((service) => (
+            <SingleServiceCard key={service.title} {...service} />
+          ))}
+        </div>
         <p className="mb-4 text-xl">Misc</p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
           {services.misc.map((service) => (

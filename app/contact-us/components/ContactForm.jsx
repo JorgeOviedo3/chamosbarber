@@ -19,7 +19,7 @@ export const ContactForm = () => {
   return (
     <form className="mb-14">
       <div className="flex flex-wrap mb-2">
-        <div className="w-full px-3 mb-2 md:mb-0">
+        <div className="w-full  mb-2 md:mb-0">
           <label className="block tracking-wide text-gray-900 mb-2" htmlFor="name">
             Full Name
           </label>
@@ -34,7 +34,7 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className="flex flex-wrap mb-2">
-        <div className="w-full px-3">
+        <div className="w-full ">
           <label className="block  tracking-wide text-gray-900 mb-2" htmlFor="email">
             Email
           </label>
@@ -48,7 +48,7 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className="flex flex-wrap mb-2">
-        <div className="w-full px-3">
+        <div className="w-full ">
           <label className="block tracking-wide text-gray-900 mb-2" htmlFor="message">
             Inquiry
           </label>
@@ -62,7 +62,7 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className="md:flex md:items-center">
-        <div className="md:w-1/3 px-3">
+        <div className="md:w-1/3">
           <button
             className="w-full py-4 px-2 bg-black text-white font-bold rounded flex text-lg items-center justify-center uppercase mt-2 hover:bg-secondary duration-300"
             type="submit"
