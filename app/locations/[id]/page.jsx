@@ -1,6 +1,9 @@
 import BannerForPage from "@/app/components/BannerForPage";
 import { SingleStore } from "@/app/components/stores/SingleStore";
 import { stores } from "@/app/data/stores";
+import { FaPhoneAlt } from "react-icons/fa";
+import { ScheduleTable } from "./components/ScheduleTable";
+import { BsCalendarDay } from "react-icons/bs";
 
 const page = ({ params }) => {
   const data = stores.find((store) => store.id === params.id);
@@ -11,10 +14,33 @@ const page = ({ params }) => {
       <div className="max-w-screen-xl mb-10 mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="flex flex-col gap-y-4 lg:flex-row justify-between">
           <div className="w-full lg:w-4/6 lg:pr-10">
-            <p className="font-bold text-2xl mb-2">{data.name}</p>
-            <p className="mb-4 lg:mb-10 text-justify">
-              {data.address}, {data.phone}
-            </p>
+            <p className="font-bold text-2xl mb-4">{data.name}</p>
+            <ScheduleTable />
+            <div className="flex flex-col justify-center items-center mb-11">
+              <a
+                href={`tel:${data.phone}`}
+                target="__blank"
+                className="flex min-w-[230px] text-center items-center gap-2 rounded bg-black px-16 py-3 text-sm font-medium text-white transition hover:bg-black/80 focus:outline-none uppercase"
+              >
+                <FaPhoneAlt className="w-4 h-4" />
+                Call Us!
+              </a>
+              - OR -
+
+              <a
+                href={data.booksy}
+                target="__blank"
+                className="flex min-w-[230px] text-center items-center gap-2 rounded bg-black px-16 py-3 text-sm font-medium text-white transition hover:bg-black/80 focus:outline-none uppercase"
+              >
+                <BsCalendarDay className="w-4 h-4" />
+                Book now!
+              </a>
+            </div>
+
+            <div>
+              {data.gmaps}
+              <p className="mb-2">Address: {data.address}</p>
+            </div>
           </div>
           <div className=" flex flex-col gap-8">
             <div className="flex flex-col gap-4">
