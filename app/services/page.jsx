@@ -1,6 +1,21 @@
 import BannerForPage from "../components/BannerForPage"
 import { GridServices } from "./components/GridServices"
 
+export const metadata = () => {
+    return {
+      title: "Services - Chamos Barber Shop",
+      keywords: [
+        "Barber Shop",
+        "Men's barber shop",
+        "Chamos Barber Shop",
+        "Men's haircut",
+        "Professional barber",
+        "Shaving and beard grooming",
+        "Services"
+      ],
+    };
+};
+
 const page = () => {
     return (
         <>

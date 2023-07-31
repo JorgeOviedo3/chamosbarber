@@ -5,12 +5,41 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { ScheduleTable } from "./components/ScheduleTable";
 import { BsCalendarDay } from "react-icons/bs";
 
+
+export const generateMetadata = ({ params }) => {
+  const store = stores.find((store) => store.id === params.id);
+
+  return {
+    title: `${store.name} - Store`,
+    openGraph: {
+      title: store.name,
+      description: store.address,
+      url: `https://www.chamosbarbershop.com/locations/${store.id}`,
+      siteName: 'Chamos Barber Shop',
+      images: [{
+          url: `${store.img}`,
+      }],
+      locale: 'en_US',
+      type: 'website',
+    },
+    keywords: [
+      "Barber Shop",
+      "Men's barber shop",
+      `${store.name}`,
+      "Men's haircut",
+      "Professional barber",
+      "Shaving and beard grooming",
+      `${store.address}`
+    ],
+  };
+};
+
 const page = ({ params }) => {
   const data = stores.find((store) => store.id === params.id);
 
   return (
     <>
-      <BannerForPage title={data.name} />
+      <BannerForPage title={data.name}/>
       <div className="max-w-screen-xl mb-10 mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="flex flex-col gap-y-4 lg:flex-row justify-between">
           <div className="w-full lg:w-4/6 lg:pr-10">

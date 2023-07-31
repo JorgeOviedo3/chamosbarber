@@ -5,6 +5,21 @@ import { stores } from "../data/stores";
 import { SingleStore } from "../components/stores/SingleStore";
 import { BsFacebook, BsInstagram, BsMailbox2, BsTwitter } from "react-icons/bs";
 
+export const metadata = () => {
+  return {
+    title: "Contact Us - Chamos Barber Shop",
+    keywords: [
+      "Barber Shop",
+      "Men's barber shop",
+      "Chamos Barber Shop",
+      "Men's haircut",
+      "Professional barber",
+      "Shaving and beard grooming",
+      "Contact Us"
+    ],
+  };
+};
+
 const page = () => {
   return (
     <>

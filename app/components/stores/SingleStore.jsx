@@ -8,7 +8,8 @@ export const SingleStore = ({ name, address, phone, barbers, image, id }) => {
   return (
     <Link
       href={`/locations/${id}`}
-      className="block rounded-lg p-4 border bg-gray-100 border-gray-200 shadow-md hover:border-gray-300 hover:ring-1 hover:ring-gray-300 hover:scale-105 duration-300"
+      className="block rounded-lg p-4 shadow-md hover:border-gray-300 hover:ring-1 hover:ring-gray-300 hover:scale-105 duration-100
+      md:scale-100"
     >
       <Image
         width={536}

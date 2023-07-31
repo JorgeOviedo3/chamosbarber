@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
           <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">
-            Welcome to Chamos Barber Shop <br />{" "}
+            Welcome to Chamos Barber Shop <br />
             <span className="font-thin text-gray-700 text-xl md:text-2xl">
               Elevating Men&apos;s Grooming
             </span>
