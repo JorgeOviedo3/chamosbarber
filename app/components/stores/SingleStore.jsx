@@ -8,7 +8,7 @@ export const SingleStore = ({ name, address, phone, barbers, image, id }) => {
   return (
     <Link
       href={`/locations/${id}`}
-      className="block rounded-lg p-4 shadow-md hover:border-gray-300 hover:ring-1 hover:ring-gray-300 md:hover:scale-105 duration-100
+      className="block rounded-lg p-4 shadow-md hover:border-gray-300 hover:ring-1 hover:ring-gray-300 lg:hover:scale-105 duration-100
       md:scale-100"
     >
       <Image
@@ -16,7 +16,7 @@ export const SingleStore = ({ name, address, phone, barbers, image, id }) => {
         height={400}
         alt={name}
         src={image}
-        className="h-56 w-full rounded-md object-cover"
+        className="h-64 w-full rounded-md object-cover"
       />
 
       <div className="mt-2">

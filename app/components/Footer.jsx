@@ -6,11 +6,11 @@ export const Footer = () => {
     <footer className="bg-white lg:grid lg:grid-cols-5">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
         <Image
-          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+          src="/logo.webp"
           alt="Footer Image"
-          width={1548}
-          height={1161}
-          className="absolute inset-0 h-full w-full object-cover grayscale"
+          width={2975}
+          height={859}
+          className="absolute inset-0 h-full w-full object-contain p-5 grayscale"
         />
       </div>
 
@@ -21,7 +21,7 @@ export const Footer = () => {
               <span className="text-xs uppercase tracking-wide text-gray-500">Call us</span>
 
               <a
-                href="#"
+                href="tel:4073444410"
                 className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
               >
                 (407) 344-4410
@@ -110,19 +110,28 @@ export const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Kissimee, 34744
-                  </a>
+                  <Link
+                    href="/locations/chamos-barber-1"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Kissimmee, 34744
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
-                    Kissimee, 34743
-                  </a>
+                  <Link
+                    href="/locations/chamos-barber-2"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Kissimmee, 34743
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link
+                    href="/locations/chamos-barber-3"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     Orlando, 32832
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

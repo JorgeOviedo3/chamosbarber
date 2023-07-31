@@ -57,7 +57,7 @@ export const Navbar = () => {
               <div className="hidden md:flex">
                 <a
                   className="flex rounded-md bg-white duration-300 px-3 md:px-5 py-2.5 text-sm font-medium text-black shadow items-center gap-2"
-                  href="/"
+                  href="tel:4073444410"
                 >
                   <span>
                     <IoCall />
@@ -81,13 +81,13 @@ export const Navbar = () => {
         {mobileMenu && (
           <div className="flex md:hidden h-[calc(100vh-74px)] mt-10 items-center flex-col gap-5 bg-black">
             {routes.map((route) => (
-              <Link href={route.href} key={route.name}>
+              <Link onClick={() => setMobileMenu(false)} href={route.href} key={route.name}>
                 {route.name}
               </Link>
             ))}
             <a
               className="flex w-fit rounded-md bg-white duration-300 px-3 py-2.5 text-sm font-medium text-black shadow items-center gap-2"
-              href="/"
+              href="tel:4073444410"
             >
               <span>
                 <IoCall />
