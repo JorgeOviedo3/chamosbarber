@@ -26,7 +26,7 @@ const NotFound = () => {
         <Navbar />     
             <div className="bg-slate-300 rounded p-8 lg:max-w-[50%] mx-auto flex items-center flex-col mt-[100px] my-auto">
                 <p className="text-center text-3xl font-bold uppercase mb-8 text-main">
-                    UNLESS YOU HAVE A TIME MACHINE THIS PAGE DOESN'T EXISTS. 404
+                    UNLESS YOU HAVE A TIME MACHINE THIS PAGE DOESN&#39;T EXISTS. 404
                 </p>
                 <a
                 onClick={() => (window.location.href = '/')}
